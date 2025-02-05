@@ -1,0 +1,114 @@
+.define-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  max-width: 1500px;
+  margin: auto;
+  gap: 90px;
+}
+
+.define-content {
+  flex: 1 1;
+  color: #1E1E1E;
+}
+.define-title {
+  font-family: 'Lexend', sans-serif;
+  font-size: 32px;
+  font-weight: medium;
+  color: #1E1E1E;
+}
+
+.define-description {
+  font-family: 'Lexend', sans-serif;
+  font-size: 20px;
+  font-weight: regular;
+  color: #1E1E1E;
+  margin-bottom: 15px;
+  text-align: justify;
+
+}
+
+.highlight-text {
+  font-weight: bold;
+  color: #407BFF;
+}
+.know{
+  color: #1E1E1E;
+  text-decoration: underline;
+}
+.define-button {
+  font-family: 'Lexend', sans-serif;
+  font-size: 20px;
+  font-weight: medium;
+  background-color: #376AED;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.define-image-container {
+  flex: 1;
+}
+
+.define-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px){
+  .define-description{
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .define-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .define-image {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .define-button {
+    width: 100%;
+    text-align: center;
+  }
+  .define-text-container{
+    text-align: left;
+  }
+  .define-image{
+    height: 250px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .define-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .define-button {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+.define-text-container{
+  text-align: left;
+}
+
+@media (min-width: 769px) {
+  .define-container {
+    flex-direction: row;
+  }
+
+  .define-button {
+    width: auto;
+  }
+}

@@ -1,0 +1,359 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient( #000000 0%, #666666 100%);
+  height: calc(135vh);
+}
+
+.Our{
+  color:#ffffff;
+  font-size: 40px;
+  font-family:"lexend";
+  font-weight: normal;
+  text-align: center;
+}
+
+.Our h4{
+  font-size: 30px;
+}
+
+.our-img{
+  max-width: 100%;
+  height:500px;
+}
+div.gallery {
+  margin: 3px;
+  float: left;
+  width: 280px;
+  padding:10px;
+  position: relative;
+
+}
+
+div.gallery:hover {
+ 
+ margin-right: 20px;
+}
+
+div.gallery img {
+  width: 100vw;
+  height: 280px;
+  border-radius: 10px;
+  margin-left: 4px;
+  
+  
+}
+
+div.desc {
+  display: flex;
+  padding: 15px;
+  text-align: left;
+  flex-direction: column;
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 100%;
+  padding: 49.9px;
+  border-radius: 0 0 10px 10px;
+  margin-left: 4px;
+  opacity: 1.0 ;
+}
+.desc h6{
+  margin-left: -10px;
+}
+
+.flip-container {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+  color:white;
+ 
+}
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+ 
+}
+
+.front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front {
+  color: white;
+  position: absolute;
+
+}
+
+.flip-card-back {
+  background-color: #162F4B;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 8px;
+  margin-bottom: 45px;
+  text-align: justify;
+  width:100%;
+  height:95%;
+  font-size: 16px;
+  text-align: justify;
+  margin-right: 45px;
+
+}
+h2{
+  text-decoration-line: underline;
+}
+
+ .flip-card-back .text{
+  background-color: #162F4B;
+  text-align: center;
+  max-height: 150px;
+  font-size: 16px;
+  margin-top: 10PX;
+}
+.arrow{
+position:absolute;
+width:1rem;
+height: 1rem;
+color:blue;
+}
+
+.far {
+  position: absolute ;
+  bottom: 25px;
+  right: 20px; 
+  font-size: 25px;
+  color: blue;
+  
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+ 
+@media (max-width:576px){
+  .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around !important;
+    background-image: linear-gradient( #000000 0%, #666666 100%);
+    
+  }
+  .flip-container {
+    background-color: transparent;
+    width: 250px;
+    height: 300px;
+    perspective: 900px;
+  }
+  .flip-card-back .text{
+    font-size: 15px !important;
+  }
+  
+div.desc {
+  display: flex;
+  padding: 15px;
+  text-align: left;
+  flex-direction: column;
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 100%;
+  padding: 49.9px;
+  border-radius: 0 0 10px 10px;
+  margin-left: 4px;
+  opacity: 1.0 ;
+}
+
+}
+
+
+@media (min-width: 769px) {
+  .flip-container {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 900px;
+  } 
+
+}
+
+@media (min-width: 769px) {
+  .gallery {
+    width: 23% !important;
+  }
+  .flip-card-back .text  .text{
+    font-size: 10px !important;
+  }
+
+
+  .flip-container {
+    max-width: 300px !important;
+  }
+  
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .gallery {
+    width: 45%;
+  }
+
+  .flip-container {
+    max-width: 280px;
+  }
+
+  .desc {
+    font-size: 12px;
+    top:68%;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery {
+    width: 100%;
+  }
+
+  .flip-container {
+    max-width: 250px;
+  }
+  .flip-card-back .text{
+    font-size: 10px !important;
+  }
+
+  .desc {
+    font-size: 12px;
+  }
+}
+@media  (max-width: 1024px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-image: linear-gradient(#000000 0%, #666666 100%);
+    height: auto;
+    gap: 20px; 
+  }
+
+  .Our {
+    font-size: 35px;
+  }
+
+  .Our h4 {
+    font-size: 28px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+  }
+
+  .gallery {
+    width: 45%;
+    padding: 8px;
+    margin: 5px;
+    gap: 10px; 
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+
+  .desc {
+    padding: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .flip-container {
+    width: 200px;
+    height: 250px;
+  }
+
+  .flipper {
+    transform: none;
+    transition: transform 0.6s;
+  }
+
+  .front, .flip-card-back {
+    width: 100%;
+    height: 90%;
+    text-align: justify;
+  }
+
+  .flip-card-back {
+    margin-bottom: 30px;
+  }
+
+  .text {
+    font-size: 14px;
+    max-height: 120px;
+  }
+
+
+  .far {
+    font-size: 20px;
+    bottom: 20px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flip-card-back .text {
+    font-size: 12px;
+  }
+  
+div.desc {
+  display: flex;
+  padding: 15px;
+  text-align: left;
+  flex-direction: column;
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 100%;
+  padding: 49.9px;
+  border-radius: 0 0 10px 10px;
+  margin-left: 4px;
+  opacity: 1.0 ;
+}
+
+}
+@media (max-width: 576px) {
+  .flip-card-back .text {
+    font-size: 13px !important;
+  }
+  .desc {
+    font-size: 12px;
+}
+}

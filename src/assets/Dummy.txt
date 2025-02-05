@@ -1,0 +1,132 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
+import Careers from './Careers';
+import Employees from './Employees';
+import Faq from './Faq';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Service from './components/Service1';
+//import "../src/App.css";
+import CombinedNav from './components/CombinedNav';
+import Policy from "./components/Policy";
+import Terms from './components/Terms';
+import NotFound from "./NotFound.js";
+
+function MainLayout({ children }) {
+  return (
+    <>
+      <CombinedNav />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
+}
+
+function MinimalLayout({ children }) {
+  return <main>{children}</main>;
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        {/* Routes with header and footer */}
+        <Route
+          path="/"
+          element={
+            <MainLayout>
+              <Home />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/Home"
+          element={
+            <MainLayout>
+              <Home />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <MainLayout>
+              <About />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/services"
+          element={
+            <MainLayout>
+              <Service />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/career"
+          element={
+            <MainLayout>
+              <Careers />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/EmployeeBlog"
+          element={
+            <MainLayout>
+              <Employees />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/faq"
+          element={
+            <MainLayout>
+              <Faq />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <MainLayout>
+              <Contact />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/Policy"
+          element={
+            <MainLayout>
+              <Policy />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/Terms"
+          element={
+            <MainLayout>
+              <Terms />
+            </MainLayout>
+          }
+        />
+
+        {/* Routes without header and footer */}
+        <Route
+          path="*"
+          element={
+            <MinimalLayout>
+              <NotFound />
+            </MinimalLayout>
+          }
+        />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
+App.js

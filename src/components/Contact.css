@@ -1,0 +1,229 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.contact-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/images/contact-image.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  height: auto;
+  min-height: 100vh;
+}
+
+
+.address-type {
+  margin-left:10px;
+  padding: 10px;
+}
+
+.ico {
+  background-color: white;
+  border-radius: 50%;
+  width: 6vh;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ico2 {
+  background-color: white;
+  border-radius: 50%;
+  width: 13vh;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name, .email, .subject, .message {
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #333;
+}
+
+.message {
+  height: 130px;
+  resize: none;
+}
+
+.button {
+  background-color: #376aed;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2853a6;
+}
+
+
+.head {
+  font-size: 30px;
+  text-align: center;
+  /* line-height: 1.5rem !important; */
+  /* margin-bottom: 20px; */
+}
+
+.para {
+  width: 100%;
+  max-width: 400px;
+  text-align: justify;
+}
+
+.Address1, .Let, .Email {
+  font-size: x-large;
+  color: hsl(223, 83%, 57%);
+  text-align: center;
+  margin-right:80%;
+}
+
+
+.nav1{
+  background-color: rgb(245, 245, 245);
+  padding: 10px 20px;
+}
+
+.nav1 .homeContact {
+  color: #376aed;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav1 .homeContact:hover {
+  text-decoration: underline;
+}
+
+/* .nav1 .con {
+  font-size: 18px;
+} */
+.div1{
+  width: 88% !important;
+}
+
+@media (max-width: 1200px) {
+  .head {
+    font-size: 32px;
+  }
+
+   .Let, .Email {
+    font-size: large;
+  }
+  .ico2{
+    height: 4vh;
+}
+.Address1{
+  font-size: 22px;
+}
+  .ico {
+    width: 3.5vh;
+    height: 3.5vh;
+  }
+}
+
+@media (max-width: 780px) {
+  .head {
+    font-size: 28px;
+  }
+
+  .Let, .Email {
+    font-size: medium;
+  }
+  .ico2{
+    height: 5vh;
+  }
+  .Address1{
+    font-size: 23px;
+  }
+
+  .name, .email, .subject, .message, .button {
+    max-width: 100%;
+  }
+
+  .ico {
+    width: 5vh;
+    height: 5vh;
+  }
+
+  .nav1 .homeContact {
+    font-size: 14px;
+  }
+
+  .nav1 .con {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 578px) {
+  .head {
+    font-size: 24px;
+  }
+
+ .Let, .Email {
+    font-size: small;
+  }
+
+  .ico {
+    width: 5vh;
+    height: 5vh;
+  }
+  .ico2{
+    width: 12vh;
+    height: 6vh;
+  }
+  .Address1{
+    font-size: 23px;
+  }
+
+  .nav1 .homeContact {
+    font-size: 12px;
+  }
+
+  .nav1 .con {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 395px) {
+  .head {
+    font-size: 18px;
+  }
+
+ .Let, .Email {
+    font-size: smaller;
+  }
+
+  .ico {
+    width: 8vh;
+    height: 8vh;
+    font-size: 10px;
+  }
+  .ico2{
+    width: 24vh;
+    height: 7vh;
+  }
+  .Address1{
+    font-size: 22px;
+  }
+
+  .nav1 .homeContact {
+    font-size: 10px;
+  }
+
+  .nav1 .con {
+    font-size:10px;
+}
+}

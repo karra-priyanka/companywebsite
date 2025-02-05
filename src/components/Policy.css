@@ -1,0 +1,22 @@
+.policy-main{
+    border: 10px solid #162F4B;
+    height: 100%;
+
+
+}
+.policy{
+    background-color: white;
+    height: 100%;
+    padding-left:20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+.policy h4{
+    color:#162F4B;
+    font-family: 'Roboto';
+    font-weight: bold;
+    
+}
+.policy p{
+    font-family: 'Roboto';
+}

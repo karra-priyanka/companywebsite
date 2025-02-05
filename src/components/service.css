@@ -1,0 +1,160 @@
+.App {
+    font-family: Arial, sans-serif;
+    background-color: #e4e1e175;
+    padding: 30px;
+  }
+  
+.text a{
+    text-decoration: none;
+    color: #000;
+}
+.text p{
+    color: #1976d2;
+}
+  .conter {
+    display: flex;
+    width: 100%;
+    flex-direction: column; /* Stack rows vertically */
+    gap: 30px; /* Added space between rows */
+  }
+  
+  /* Row Layout to display 2 cards per row */
+  .row {
+    display: flex;
+    gap:0px;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top of the row */
+  }
+  
+  /* Compact Card with Image */
+  .compact-card {
+    display: flex;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+  }
+  
+  
+  /* Image card specific styles */
+  .image-card {
+    width: 600px; /* The image takes 50% width */
+    height: 400px; /* Fixed height for images */
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 1;
+  
+  }
+  
+  .card-img {
+    width: 60%; /* Image will fill the container */
+    height: 90%;
+    object-fit: cover; /* Maintains the image's aspect ratio */
+  }
+  
+  .content-card {
+    padding: 10px; /* Adjust padding for better spacing */
+    display: flex;
+    height: 150px;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    margin: 0px; /* Adds margin and centers the card horizontally */
+    margin-top: 80px;
+    border-radius: 10px ;
+    margin-left: -10px;
+  }
+  
+  /* Content card title style */
+  .card-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 10px; /* Increased padding to create more space inside the title box */
+    background-color: #1976d2; /* Blue background for the title box */
+    color: #fff;
+    /* clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0); */
+    clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
+    text-align: left;
+    display: block;
+    width: 70%; /* Title box width */
+    margin-bottom: 30px;
+    height: 40px;
+  }
+  
+  /* Default Content card paragraph style */
+  .content-card p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+    color: #ce86ab;
+    line-height: 1;
+    margin-bottom: 20px;
+    
+    
+  }
+  
+  /* Specific padding for each content card's paragraph */
+  .padding-large {
+    padding: 0 0; /* Large padding for content card 1 */
+  }
+  
+  .padding-small {
+    padding:0 0; /* Small padding for content card 2 */
+  }
+  
+  .padding-medium {
+    padding: 0 0; /* Medium padding for content card 3 */
+  }
+  
+  .padding-extra {
+    padding: 0 0; /* Extra padding for content card 4 */
+  }
+  
+  /* Align title to the left */
+  .align-left .card-title {
+    text-align: left;
+  }
+  
+  /* Align title to the center */
+  .align-center .card-title {
+    text-align: center;
+  }
+  
+  /* Align title to the right */
+  .align-right .card-title {
+    text-align: right;
+  }
+  
+  /* Align paragraph to the left */
+  .align-left-p .content-card p {
+    text-align: left;
+  }
+  
+  /* Align paragraph to the center */
+  .align-center-p .content-card p {
+    text-align: center;
+  }
+  
+  /* Align paragraph to the right */
+  .align-right-p .content-card p {
+    text-align: right;
+  }
+  
+  /* Specific content card styles for each card */
+  .content-card-1 {
+    background-color: #FCD07A; /* Light cyan */
+  }
+  
+  .content-card-2 {
+    background-color: #A7DD94; /* Light yellow */
+  }
+  
+  .content-card-3 {
+    background-color: #F8B59B; /* Light green */
+  }
+  
+  .content-card-4 {
+    background-color: #CCB2EE; /* Light orange */
+  }
+  

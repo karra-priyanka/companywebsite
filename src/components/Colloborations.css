@@ -1,0 +1,100 @@
+.container {
+    font-family: Arial, sans-serif;
+    background-color: #f5feff;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .container  .header p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Values Grid */
+  .valuesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 50px;
+    padding: 0 100px;
+    text-align: left;
+    color: black;
+  }
+
+  /* Value Box Styles */
+  .valueBox {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 15px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .valueBox h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .valueBox p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  /* Individual Colors for Each Value */
+  .collaboration {
+    background-color: #a7dd94;
+  }
+  
+  .transparency {
+    background-color: #f8b59b;
+    padding: 30px 10px;
+  }
+  
+  .trust {
+    background-color: #fcd07a;
+  }
+  
+  .integrity {
+    background-color: #ccb2ee;
+  }
+  @media (max-width:568px) {
+    .header p{
+      margin: 0;
+      width: 100% !important;
+      font-size: 15px !important;
+      text-align: center;
+    }
+    .valuesGrid .valueBox{
+      width: 100% !important;
+      font-size: 10px;
+      line-height: 0.8 !important;
+    }
+    .valuesGrid{
+      width: 450px;
+    }
+    
+  }
+
+  @media (min-width:320px) and (max-width:375px){
+    .valuesGrid{
+      display: grid;
+      grid-column: span 1;
+      gap: 5px 10px;
+      padding: 0 20px;
+      width: 340px;
+    }
+  }
+
+
+
+ 
